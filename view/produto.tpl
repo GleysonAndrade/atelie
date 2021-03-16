@@ -13,7 +13,7 @@
 			<figcaption class="info-wrap">
 				<a href="" class="title">{$P.pro_nome}</a>
 				<div class="price mt-1">R${$P.pro_valor}</div> <!-- price-wrap.// -->
-			     <a href="#" class="btn btn-outline-primary btn-sm"> Add to cart 
+					 <a href="#" class="btn btn-outline-primary btn-sm"> Add to cart 
                      <i class="fa fa-shopping-cart"></i> 
                  </a>
 			</figcaption>

@@ -43,7 +43,7 @@ class Produto extends Conexao{
             'pro_altura' => $lista['pro_altura'],
             'pro_largura' => $lista['pro_largura'],
             'pro_comprimento' => $lista['pro_comprimento'],
-            'pro_img' => ($lista['pro_img']) ,
+            'pro_img'     => $lista['pro_img'], 
             'pro_slug' => $lista['pro_slug'],
             'pro_frete_free' => $lista['pro_frete_free'],
             'pro_ref' => $lista['pro_ref'],
