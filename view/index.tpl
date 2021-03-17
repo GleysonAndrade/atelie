@@ -12,7 +12,7 @@
 <link href="{$GET_TEMA}/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
 
 <!-- jQuery -->
-<script src="{$GET_TEMA}/tema/js/jquery-2.0.0.min.js" type="text/javascript"></script>{$GET_TEMA}
+<script src="{$GET_TEMA}/tema/js/jquery-2.0.0.min.js" type="text/javascript"></script>
 
 <!-- Bootstrap4 files-->
 <script src="{$GET_TEMA}/tema/js/bootstrap.bundle.min.js" type="text/javascript"></script>

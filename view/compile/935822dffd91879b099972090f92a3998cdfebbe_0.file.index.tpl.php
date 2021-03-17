@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-03-14 15:10:48
+/* Smarty version 3.1.39, created on 2021-03-17 02:13:40
   from 'C:\xampp\htdocs\atelie\view\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_604e1968c08094_70565026',
+  'unifunc' => 'content_605157c4220d04_03986841',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '935822dffd91879b099972090f92a3998cdfebbe' => 
     array (
       0 => 'C:\\xampp\\htdocs\\atelie\\view\\index.tpl',
-      1 => 1615692840,
+      1 => 1615943617,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_604e1968c08094_70565026 (Smarty_Internal_Template $_smarty_tpl) {
+function content_605157c4220d04_03986841 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html lang="pt-br">
@@ -40,8 +40,7 @@ function content_604e1968c08094_70565026 (Smarty_Internal_Template $_smarty_tpl)
 <?php echo '<script'; ?>
  src="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
 /tema/js/jquery-2.0.0.min.js" type="text/javascript"><?php echo '</script'; ?>
-><?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
-
+>
 
 <!-- Bootstrap4 files-->
 <?php echo '<script'; ?>

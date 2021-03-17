@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-03-17 01:50:06
+/* Smarty version 3.1.39, created on 2021-03-17 02:07:21
   from 'C:\xampp\htdocs\atelie\view\produto.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_6051523ea2b736_79997726',
+  'unifunc' => 'content_605156496a97c6_37115061',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6051523ea2b736_79997726 (Smarty_Internal_Template $_smarty_tpl) {
+function content_605156496a97c6_37115061 (Smarty_Internal_Template $_smarty_tpl) {
 ?><section id="produto" class="section-name  padding-y-sm">
 <div class="container">
 
