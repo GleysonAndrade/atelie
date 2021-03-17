@@ -5,7 +5,7 @@
 				<aside class="col-md-6">
 						<article class="gallery-wrap">
 							<div class="card img-big-wrap">
-								<a href="#" class="img-wrap"> <img src="{$P.pro_img}" alt=""> </a>
+								<a href="#" class="img-wrap"> <img src="/atelie/media/images/{$P.pro_img}"  > </a>
 							</div> <!-- card img-big-wrap.// -->
 							<div class="thumbs-wrap">
 								<a href="#" class="item-thumb"> <img src=""></a>

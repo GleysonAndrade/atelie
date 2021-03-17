@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-03-17 02:07:49
+/* Smarty version 3.1.39, created on 2021-03-17 16:43:15
   from 'C:\xampp\htdocs\atelie\view\produto_info.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_60515665c03ba0_79501959',
+  'unifunc' => 'content_6052239365be34_38781655',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '4399f64bf832d34c3512efbd80d83c2a2ae2b6e8' => 
     array (
       0 => 'C:\\xampp\\htdocs\\atelie\\view\\produto_info.tpl',
-      1 => 1615942141,
+      1 => 1615995767,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_60515665c03ba0_79501959 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6052239365be34_38781655 (Smarty_Internal_Template $_smarty_tpl) {
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['PRO']->value, 'P');
 $_smarty_tpl->tpl_vars['P']->do_else = true;
 if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['P']->value) {
@@ -32,8 +32,8 @@ $_smarty_tpl->tpl_vars['P']->do_else = false;
 				<aside class="col-md-6">
 						<article class="gallery-wrap">
 							<div class="card img-big-wrap">
-								<a href="#" class="img-wrap"> <img src="<?php echo $_smarty_tpl->tpl_vars['P']->value['pro_img'];?>
-" alt=""> </a>
+								<a href="#" class="img-wrap"> <img src="/atelie/media/images/<?php echo $_smarty_tpl->tpl_vars['P']->value['pro_img'];?>
+"  > </a>
 							</div> <!-- card img-big-wrap.// -->
 							<div class="thumbs-wrap">
 								<a href="#" class="item-thumb"> <img src=""></a>

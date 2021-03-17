@@ -43,7 +43,6 @@ class Produto extends Conexao{
             'pro_altura' => $lista['pro_altura'],
             'pro_largura' => $lista['pro_largura'],
             'pro_comprimento' => $lista['pro_comprimento'],
-            'pro_img' => $lista['pro_img'], 
             'pro_img' => $lista['pro_img'],  
 	        'pro_img_g' => Rotas::ImageLink($lista['pro_img'], 500, 501) , 
 	        'pro_img_p' => Rotas::ImageLink($lista['pro_img'], 70, 70) , 
