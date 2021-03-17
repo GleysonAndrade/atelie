@@ -46,9 +46,9 @@
 	}
 
     static function ImageLink($img, $largura, $altura){
-		$images = self::get_ImageURL() ."thumb.php?src={$img}&w={$largura}&h={$altura}&zc=1";
-        return $images;
-    }
+		$imagem = self::get_ImageURL() ."thumb.php?src={$img}&w={$largura}&h={$altura}&zc=1";
+		return $imagem;
+	}
 
     static function pag_Home(){
         return self::get_SiteHOME() . '/home';

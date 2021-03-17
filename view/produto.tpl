@@ -9,7 +9,7 @@
 {foreach from=$PRO item=P}
 	<div class="col-md-3">
 		<div href="#" class="card card-product-grid">
-			<a href="{$PRO_INFO}/{$P.pro_id}/{$P.pro_slug}" class="img-wrap"> <img src="media/images/{$P.pro_img}" alt=""> </a>
+			<a href="{$PRO_INFO}/{$P.pro_id}/{$P.pro_slug}" class="img-wrap"> <img src="{$P.pro_img}" alt=""> </a>
 			<figcaption class="info-wrap">
 				<a href="" class="title">{$P.pro_nome}</a>
 				<div class="price mt-1">R${$P.pro_valor}</div> <!-- price-wrap.// -->

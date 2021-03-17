@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-03-16 02:10:54
+/* Smarty version 3.1.39, created on 2021-03-17 01:49:49
   from 'C:\xampp\htdocs\atelie\view\produto_info.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_6050059e9afce7_10851021',
+  'unifunc' => 'content_6051522d2c3669_12877269',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '4399f64bf832d34c3512efbd80d83c2a2ae2b6e8' => 
     array (
       0 => 'C:\\xampp\\htdocs\\atelie\\view\\produto_info.tpl',
-      1 => 1615857052,
+      1 => 1615942141,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6050059e9afce7_10851021 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6051522d2c3669_12877269 (Smarty_Internal_Template $_smarty_tpl) {
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['PRO']->value, 'P');
 $_smarty_tpl->tpl_vars['P']->do_else = true;
 if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['P']->value) {
@@ -32,22 +32,25 @@ $_smarty_tpl->tpl_vars['P']->do_else = false;
 				<aside class="col-md-6">
 						<article class="gallery-wrap">
 							<div class="card img-big-wrap">
-								<a href="#"> <img src="bootstrap-ecommerce-html/images/items/12.jpg"></a>
+								<a href="#" class="img-wrap"> <img src="<?php echo $_smarty_tpl->tpl_vars['P']->value['pro_img'];?>
+" alt=""> </a>
 							</div> <!-- card img-big-wrap.// -->
 							<div class="thumbs-wrap">
-								<a href="#" class="item-thumb"> <img src="bootstrap-ecommerce-html/images/items/12-1.jpg"></a>
-								<a href="#" class="item-thumb"> <img src="bootstrap-ecommerce-html/images/items/12-2.jpg"></a>
-								<a href="#" class="item-thumb"> <img src="bootstrap-ecommerce-html/images/items/1.jpg"></a>
-								<a href="#" class="item-thumb"> <img src="bootstrap-ecommerce-html/images/items/5.jpg"></a>
+								<a href="#" class="item-thumb"> <img src=""></a>
+								<a href="#" class="item-thumb"> <img src=""></a>
+								<a href="#" class="item-thumb"> <img src=""></a>
+								<a href="#" class="item-thumb"> <img src=""></a>
 							</div> <!-- thumbs-wrap .// -->
 						</article> <!-- gallery-wrap .end// -->
 				</aside>
 				<main class="col-md-6">
 					<article>
-						<a href="#" class="text-primary btn-link"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><?php echo $_smarty_tpl->tpl_vars['P']->value['cate_id'];?>
+						<a href="#" class="text-primary btn-link"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><?php echo $_smarty_tpl->tpl_vars['P']->value['cate_nome'];?>
 </font></font></a>
 						<h3 class="title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><?php echo $_smarty_tpl->tpl_vars['P']->value['pro_nome'];?>
 </font></font></h3>
+						<a href="#" class="btn-link  mr-3 text-muted"> <i class=""></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><?php echo $_smarty_tpl->tpl_vars['P']->value['pro_ref'];?>
+ ref</font></font></a>
 						<div>
 							<ul class="rating-stars">
 								<li style="width:60%" class="stars-active">

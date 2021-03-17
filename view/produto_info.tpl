@@ -5,20 +5,21 @@
 				<aside class="col-md-6">
 						<article class="gallery-wrap">
 							<div class="card img-big-wrap">
-								<a href="#"> <img src="bootstrap-ecommerce-html/images/items/12.jpg"></a>
+								<a href="#" class="img-wrap"> <img src="{$P.pro_img}" alt=""> </a>
 							</div> <!-- card img-big-wrap.// -->
 							<div class="thumbs-wrap">
-								<a href="#" class="item-thumb"> <img src="bootstrap-ecommerce-html/images/items/12-1.jpg"></a>
-								<a href="#" class="item-thumb"> <img src="bootstrap-ecommerce-html/images/items/12-2.jpg"></a>
-								<a href="#" class="item-thumb"> <img src="bootstrap-ecommerce-html/images/items/1.jpg"></a>
-								<a href="#" class="item-thumb"> <img src="bootstrap-ecommerce-html/images/items/5.jpg"></a>
+								<a href="#" class="item-thumb"> <img src=""></a>
+								<a href="#" class="item-thumb"> <img src=""></a>
+								<a href="#" class="item-thumb"> <img src=""></a>
+								<a href="#" class="item-thumb"> <img src=""></a>
 							</div> <!-- thumbs-wrap .// -->
 						</article> <!-- gallery-wrap .end// -->
 				</aside>
 				<main class="col-md-6">
 					<article>
-						<a href="#" class="text-primary btn-link"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{$P.cate_id}</font></font></a>
+						<a href="#" class="text-primary btn-link"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{$P.cate_nome}</font></font></a>
 						<h3 class="title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{$P.pro_nome}</font></font></h3>
+						<a href="#" class="btn-link  mr-3 text-muted"> <i class=""></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{$P.pro_ref} ref</font></font></a>
 						<div>
 							<ul class="rating-stars">
 								<li style="width:60%" class="stars-active">
