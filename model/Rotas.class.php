@@ -4,6 +4,7 @@
      public static $pag;
      private static $pasta_controller = 'controller';
      private static $pasta_view = 'view';
+     private static $pasta_ADM = 'adm';
 
      static function get_SiteHOME(){
          return Config::SITE_URL . '/' .Config::SITE_PASTA;
@@ -70,5 +71,10 @@
             }
          }
      }
- }
+
+//Rotas Administrativas
+
+    static function get_SiteADM(){
+    return self::get_SiteHOME() .'/' .self::$pasta_ADM;}
+   }
 ?>
