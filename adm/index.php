@@ -28,6 +28,8 @@ $smarty->assign('PAG_HOME', Rotas::pag_Home());
 
 $smarty->assign('GET_SITE_ADM', Rotas::get_SiteADM());
 
+$smarty->assign('PAG_ADM_CUSTOMATERIAL', Rotas::pag_PAG_ADM_CUSTOMATERIAL());
+
 $smarty->display('adm_index.tpl');
 
 ?>

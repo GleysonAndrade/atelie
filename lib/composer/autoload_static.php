@@ -24,6 +24,7 @@ class ComposerStaticInitfac5f562bbb613da9e2077a787026c7e
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'Conexao' => __DIR__ . '/../..' . '/model/Conexao.class.php',
         'Config' => __DIR__ . '/../..' . '/model/Config.class.php',
+        'CustoMaterial' => __DIR__ . '/../..' . '/model/CustoMaterial.class.php',
         'Produto' => __DIR__ . '/../..' . '/model/produto.class.php',
         'Rotas' => __DIR__ . '/../..' . '/model/Rotas.class.php',
         'Smarty' => __DIR__ . '/..' . '/smarty/smarty/libs/Smarty.class.php',

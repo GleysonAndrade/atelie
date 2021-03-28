@@ -68,9 +68,9 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="{$PAG_ADM_CUSTOMATERIAL}">
               <span data-feather="users"></span>
-              Custos
+              Custo Material
             </a>
           </li>
           <li class="nav-item">
@@ -136,7 +136,10 @@
           </button>
         </div>
       </div>
-
+      {php}
+        Rotas::get_Pagina();
+        //var_dump(Rotas::$pag);
+      {/php}
     </main>
   </div>
 </div>

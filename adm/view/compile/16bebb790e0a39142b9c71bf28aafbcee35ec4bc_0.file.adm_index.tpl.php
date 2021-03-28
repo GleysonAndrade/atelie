@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-03-22 21:29:47
+/* Smarty version 3.1.39, created on 2021-03-28 18:24:53
   from 'C:\xampp\htdocs\atelie\adm\view\adm_index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_6059367b3e1d33_48552672',
+  'unifunc' => 'content_6060f4258d1a13_22208680',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '16bebb790e0a39142b9c71bf28aafbcee35ec4bc' => 
     array (
       0 => 'C:\\xampp\\htdocs\\atelie\\adm\\view\\adm_index.tpl',
-      1 => 1616459385,
+      1 => 1616966691,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6059367b3e1d33_48552672 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6060f4258d1a13_22208680 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!doctype html>
 <html lang="en">
   <head>
@@ -93,9 +93,10 @@ function content_6059367b3e1d33_48552672 (Smarty_Internal_Template $_smarty_tpl)
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="<?php echo $_smarty_tpl->tpl_vars['PAG_ADM_CUSTOMATERIAL']->value;?>
+">
               <span data-feather="users"></span>
-              Custos
+              Custo Material
             </a>
           </li>
           <li class="nav-item">
@@ -161,7 +162,10 @@ function content_6059367b3e1d33_48552672 (Smarty_Internal_Template $_smarty_tpl)
           </button>
         </div>
       </div>
-
+      <?php 
+        Rotas::get_Pagina();
+        //var_dump(Rotas::$pag);
+      ?>
     </main>
   </div>
 </div>
