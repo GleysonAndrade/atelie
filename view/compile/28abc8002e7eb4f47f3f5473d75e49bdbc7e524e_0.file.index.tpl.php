@@ -1,4 +1,27 @@
+<?php
+/* Smarty version 3.1.39, created on 2021-04-01 21:29:27
+  from 'C:\MAMP\htdocs\atelie\view\index.tpl' */
 
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.39',
+  'unifunc' => 'content_60663b378adf97_02082793',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '28abc8002e7eb4f47f3f5473d75e49bdbc7e524e' => 
+    array (
+      0 => 'C:\\MAMP\\htdocs\\atelie\\view\\index.tpl',
+      1 => 1617312564,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_60663b378adf97_02082793 (Smarty_Internal_Template $_smarty_tpl) {
+?>
 <!DOCTYPE HTML>
 <html lang="pt-br">
 <head>
@@ -7,28 +30,43 @@
 <meta http-equiv="cache-control" content="max-age=604800" />
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<title>{$NOME}</title>
+<title><?php echo $_smarty_tpl->tpl_vars['NOME']->value;?>
+</title>
 
-<link href="{$GET_TEMA}/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+<link href="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
+/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
 
 <!-- jQuery -->
-<script src="{$GET_TEMA}/tema/js/jquery-2.0.0.min.js" type="text/javascript"></script>
+<?php echo '<script'; ?>
+ src="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
+/tema/js/jquery-2.0.0.min.js" type="text/javascript"><?php echo '</script'; ?>
+>
 
 <!-- Bootstrap4 files-->
-<script src="{$GET_TEMA}/tema/js/bootstrap.bundle.min.js" type="text/javascript"></script>
-<link href="{$GET_TEMA}./tema/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+<?php echo '<script'; ?>
+ src="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
+/tema/js/bootstrap.bundle.min.js" type="text/javascript"><?php echo '</script'; ?>
+>
+<link href="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
+./tema/css/bootstrap.css" rel="stylesheet" type="text/css"/>
 
 <!-- Font awesome 5 -->
 <link href="fonts/fontawesome/css/all.min.css" type="text/css" rel="stylesheet">
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 <!-- custom style -->
-<link href="{$GET_TEMA}/tema/css/ui.css" rel="stylesheet" type="text/css"/>
-<link href="{$GET_TEMA}/tema/css/responsive.css" rel="stylesheet" media="only screen and (max-width: 1200px)" />
+<link href="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
+/tema/css/ui.css" rel="stylesheet" type="text/css"/>
+<link href="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
+/tema/css/responsive.css" rel="stylesheet" media="only screen and (max-width: 1200px)" />
 
 <!-- custom javascript -->
-<script src="{$GET_TEMA}/tema/js/script.js" type="text/javascript"></script>
+<?php echo '<script'; ?>
+ src="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
+/tema/js/script.js" type="text/javascript"><?php echo '</script'; ?>
+>
 
-<script type="text/javascript">
+<?php echo '<script'; ?>
+ type="text/javascript">
 /// some script
 
 // jquery ready start
@@ -37,7 +75,8 @@ $(document).ready(function() {
 
 }); 
 // jquery end
-</script>
+<?php echo '</script'; ?>
+>
 
 </head>
 <body>
@@ -48,8 +87,10 @@ $(document).ready(function() {
 	<div class="container">
 <div class="row align-items-center">
 	<div class="col-lg-2 col-4">
-		<a href="{$PAG_HOME}" class="brand-wrap">
-			<img class="logo" src="{$GET_TEMA}/images/logo.png">
+		<a href="<?php echo $_smarty_tpl->tpl_vars['PAG_HOME']->value;?>
+" class="brand-wrap">
+			<img class="logo" src="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
+/images/logo.png">
 		</a> <!-- brand-wrap.// -->
 	</div>
 	<div class="col-lg-6 col-sm-12">
@@ -67,7 +108,8 @@ $(document).ready(function() {
 	<div class="col-lg-4 col-sm-6 col-12">
 		<div class="widgets-wrap float-md-right">
 			<div class="widget-header  mr-3">
-				<a href="{$PAG_CARRINHO}" class="icon icon-sm rounded-circle border"><i class="fa fa-shopping-cart"></i></a>
+				<a href="<?php echo $_smarty_tpl->tpl_vars['PAG_CARRINHO']->value;?>
+" class="icon icon-sm rounded-circle border"><i class="fa fa-shopping-cart"></i></a>
 				<span class="badge badge-pill badge-danger notify">0</span>
 			</div>
 			<div class="widget-header icontext">
@@ -101,14 +143,25 @@ $(document).ready(function() {
       	<li class="nav-item dropdown">
           <a class="nav-link pl-0" data-toggle="dropdown" href="#"><strong> <i class="fa fa-bars"></i>Categorias</strong></a>
           <div class="dropdown-menu">
-			{foreach from=$CATEGORIA item=c}
-			   <a class="dropdown-item" href="{$c.cate_link}">{$c.cate_nome}</a>
-		    {/foreach}
-            <a class="nav-link text-center" href="{$PAG_PRODUTO}"> Todos</a>
+			<?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['CATEGORIA']->value, 'c');
+$_smarty_tpl->tpl_vars['c']->do_else = true;
+if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['c']->value) {
+$_smarty_tpl->tpl_vars['c']->do_else = false;
+?>
+			   <a class="dropdown-item" href="<?php echo $_smarty_tpl->tpl_vars['c']->value['cate_link'];?>
+"><?php echo $_smarty_tpl->tpl_vars['c']->value['cate_nome'];?>
+</a>
+		    <?php
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
+            <a class="nav-link text-center" href="<?php echo $_smarty_tpl->tpl_vars['PAG_PRODUTO']->value;?>
+"> Todos</a>
           </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{$PAG_PRODUTO}">Produtos</a>
+          <a class="nav-link" href="<?php echo $_smarty_tpl->tpl_vars['PAG_PRODUTO']->value;?>
+">Produtos</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Supermarket</a>
@@ -135,9 +188,9 @@ $(document).ready(function() {
 
 </header> <!-- section-header.// -->
 
-{php}
+<?php 
 Rotas::get_Pagina();
-{/php}
+?>
 
 <!-- ========================= FOOTER ========================= -->
 <footer class="section-footer border-top">
@@ -147,7 +200,8 @@ Rotas::get_Pagina();
 				<aside class="col-md col-6">
 					<h6 class="title">Paginas</h6>
 					<ul class="list-unstyled">
-						<li> <a href="{$PAG_PRODUTO}">Produtos</a></li>
+						<li> <a href="<?php echo $_smarty_tpl->tpl_vars['PAG_PRODUTO']->value;?>
+">Produtos</a></li>
 						<li> <a href="#">Puma</a></li>
 						<li> <a href="#">Reebok</a></li>
 						<li> <a href="#">Nike</a></li>
@@ -165,7 +219,8 @@ Rotas::get_Pagina();
 				<aside class="col-md col-6">
 					<h6 class="title">Socorro</h6>
 					<ul class="list-unstyled">
-						<li> <a href="{$PAG_CONTATO}">Contato</a></li>
+						<li> <a href="<?php echo $_smarty_tpl->tpl_vars['PAG_CONTATO']->value;?>
+">Contato</a></li>
 						<li> <a href="#">Reembolso de Dinheiro</a></li>
 						<li> <a href="#">Status do Pedido</a></li>
 						<li> <a href="#">Informação de Envio</a></li>
@@ -176,7 +231,8 @@ Rotas::get_Pagina();
 					<ul class="list-unstyled">
 						<li> <a href="#">Login do Usuário</a></li>
 						<li> <a href="#">Registrar Usuário</a></li>
-						<li> <a href="{$PAG_MINHACONTA}"> Minha Conta </a></li>
+						<li> <a href="<?php echo $_smarty_tpl->tpl_vars['PAG_MINHACONTA']->value;?>
+"> Minha Conta </a></li>
 						<li> <a href="#">Meus Pedidos</a></li>
 					</ul>
 				</aside>
@@ -194,7 +250,9 @@ Rotas::get_Pagina();
 
 		<section class="footer-bottom border-top row">
 			<div class="col-md-3">
-				<p class="text-muted"> &copy {$NOME} {$DATA} </p>
+				<p class="text-muted"> &copy <?php echo $_smarty_tpl->tpl_vars['NOME']->value;?>
+ <?php echo $_smarty_tpl->tpl_vars['DATA']->value;?>
+ </p>
 			</div>
 			<div class="col-md-7 text-md-center">
 				<span  class="px-2">atelielauralaco@systecweb.online</span>
@@ -212,4 +270,5 @@ Rotas::get_Pagina();
 </footer>
 <!-- ========================= FOOTER END // ========================= -->
 </body>
-</html>
+</html><?php }
+}

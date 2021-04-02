@@ -7,13 +7,14 @@ const SITE_URL = "http://localhost";
 const SITE_PASTA = "atelie";
 const SITE_NOME = "Atelie - Laura Laços";
 const SITE_EMAIL_ADM = "atelielauralaco@systecweb.online";
+const BD_LIMIT_POR_PAG = 4;
 
 //INFORMAÇÕES DO BANCO DE DADOS
 const DB_HOST = "localhost",
       DB_USER = "root",
-      DB_SENHA = "",
+      DB_SENHA = "root",
       DB_BANCO = "ateliebd",
-      DB_PREFIX = "al_";
+      DB_PREFIX = "cl_";
 
 //INFORMAÇÕES PARA PHP MAILLER
 const EMAIL_HOST = "mail.systecweb.online";

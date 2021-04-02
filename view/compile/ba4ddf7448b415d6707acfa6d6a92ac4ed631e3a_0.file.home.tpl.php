@@ -1,4 +1,27 @@
-<!-- ========================= SECTION INTRO ========================= -->
+<?php
+/* Smarty version 3.1.39, created on 2021-04-02 00:02:06
+  from 'C:\MAMP\htdocs\atelie\view\home.tpl' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.39',
+  'unifunc' => 'content_60665efe3af244_46152643',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    'ba4ddf7448b415d6707acfa6d6a92ac4ed631e3a' => 
+    array (
+      0 => 'C:\\MAMP\\htdocs\\atelie\\view\\home.tpl',
+      1 => 1617321720,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_60665efe3af244_46152643 (Smarty_Internal_Template $_smarty_tpl) {
+?><!-- ========================= SECTION INTRO ========================= -->
 <section class="section-intro">
 
 <div class="intro-banner-wrap">
@@ -66,7 +89,8 @@
 <div class="container">
 
 <header class="section-heading">
-	<a href="{$PAG_PRODUTO}" class="btn btn-outline-primary float-right">Ver todos</a>
+	<a href="<?php echo $_smarty_tpl->tpl_vars['PAG_PRODUTO']->value;?>
+" class="btn btn-outline-primary float-right">Ver todos</a>
 	<h3 class="section-title">Produtos populares</h3>
 </header><!-- sect-heading -->
 
@@ -85,4 +109,5 @@
 </div><!-- container // -->
 </section>
 
-<!-- ========================= SECTION  END// ========================= -->
+<!-- ========================= SECTION  END// ========================= --><?php }
+}

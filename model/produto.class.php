@@ -7,12 +7,12 @@ class Produto extends Conexao{
 
     function GetProdutos(){
         //Buscar produtos de uma categoria especifica
-        $query = "SELECT * FROM {$this->prefix}produto p INNER
-        JOIN {$this->prefix}categoria c ON p.pro_categoria
-        = c.cate_id";
+        $query = "SELECT * FROM {$this->prefix}produto p INNER JOIN {$this->prefix}categoria c ON p.pro_categoria = c.cate_id";
 
         $query .= " ORDER BY pro_id DESC";
 
+        $query .= $this->PaginacaoLinks("pro_id", $this->prefix."produto");
+        
         $this->ExecuteSQL($query);
 
         $this->GetLista();
@@ -24,9 +24,25 @@ class Produto extends Conexao{
         JOIN {$this->prefix}categoria c ON p.pro_categoria
         = c.cate_id";
 
-        $query .= " AND pro_id = {$id}";
+        $query .= " AND pro_id = :id";
 
-        $this->ExecuteSQL($query);
+       $params = array(':id'=>(int)$id);
+
+        $this->ExecuteSQL($query, $params);
+
+        $this->GetLista();
+    }
+
+    function GetProdutoCateId($id){
+        $query = "SELECT * FROM {$this->prefix}produto p INNER
+        JOIN {$this->prefix}categoria c ON p.pro_categoria
+        = c.cate_id";
+
+        $query .= " AND pro_categoria = :id";
+
+        $params = array(':id'=>(int)$id);
+
+        $this->ExecuteSQL($query, $params);
 
         $this->GetLista();
     }
@@ -37,15 +53,16 @@ class Produto extends Conexao{
         $this->itens[$i] = array(
             'pro_id' => $lista['pro_id'],
             'pro_nome' => $lista['pro_nome'],
-            'pro_descricao' => $lista['pro_descricao'],
+            'pro_desc_curta' => $lista['pro_desc_curta'],
+            'pro_desc_longa' => $lista['pro_desc_longa'],
             'pro_peso' => $lista['pro_peso'],
-            'pro_valor' => $lista['pro_valor'],
+            'pro_valor' => Sistema::MoedaBR($lista['pro_valor']),
             'pro_altura' => $lista['pro_altura'],
             'pro_largura' => $lista['pro_largura'],
             'pro_comprimento' => $lista['pro_comprimento'],
-            'pro_img' => $lista['pro_img'],  
-	        'pro_img_g' => Rotas::ImageLink($lista['pro_img'], 500, 501) , 
-	        'pro_img_p' => Rotas::ImageLink($lista['pro_img'], 70, 70) , 
+            'pro_img' => Rotas::ImageLink($lista['pro_img'], 180, 180),  
+	        'pro_img_g' => Rotas::ImageLink($lista['pro_img'], 500, 501), 
+	        'pro_img_p' => Rotas::ImageLink($lista['pro_img'], 70, 70), 
             'pro_slug' => $lista['pro_slug'],
             'pro_frete_free' => $lista['pro_frete_free'],
             'pro_ref' => $lista['pro_ref'],

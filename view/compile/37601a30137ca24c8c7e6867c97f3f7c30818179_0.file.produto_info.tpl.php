@@ -1,24 +1,63 @@
-{foreach from=$PRO item=P}
+<?php
+/* Smarty version 3.1.39, created on 2021-04-01 22:54:02
+  from 'C:\MAMP\htdocs\atelie\view\produto_info.tpl' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.39',
+  'unifunc' => 'content_60664f0a4238c1_58767974',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '37601a30137ca24c8c7e6867c97f3f7c30818179' => 
+    array (
+      0 => 'C:\\MAMP\\htdocs\\atelie\\view\\produto_info.tpl',
+      1 => 1617317639,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_60664f0a4238c1_58767974 (Smarty_Internal_Template $_smarty_tpl) {
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['PRO']->value, 'P');
+$_smarty_tpl->tpl_vars['P']->do_else = true;
+if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['P']->value) {
+$_smarty_tpl->tpl_vars['P']->do_else = false;
+?>
 <article class="card">
 	<div class="card-body">
 			<div class="row">
 				<aside class="col-md-6">
 						<article class="gallery-wrap">
 							<div class="card img-big-wrap">
-								<a href="#" class="img-wrap"> <img src="{$P.pro_img}"  > </a>
+								<a href="#" class="img-wrap"> <img src="<?php echo $_smarty_tpl->tpl_vars['P']->value['pro_img'];?>
+"  > </a>
 							</div> <!-- card img-big-wrap.// -->
 							<div class="thumbs-wrap">
-							{foreach from=$IMAGEN item=I}
-								<a href="#" class="item-thumb"> <img src="{$I.img_nome}"></a>
-							{/foreach}	
+							<?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['IMAGEN']->value, 'I');
+$_smarty_tpl->tpl_vars['I']->do_else = true;
+if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['I']->value) {
+$_smarty_tpl->tpl_vars['I']->do_else = false;
+?>
+								<a href="#" class="item-thumb"> <img src="<?php echo $_smarty_tpl->tpl_vars['I']->value['img_nome'];?>
+"></a>
+							<?php
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>	
 							</div> <!-- thumbs-wrap .// -->
 						</article> <!-- gallery-wrap .end// -->
 				</aside>
 				<main class="col-md-6">
 					<article>
-						<a href="#" class="text-primary btn-link"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{$P.cate_nome}</font></font></a>
-						<h3 class="title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{$P.pro_nome}</font></font></h3>
-						<a href="#" class="btn-link  mr-3 text-muted"> <i class=""></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ref: {$P.pro_ref}</font></font></a>
+						<a href="#" class="text-primary btn-link"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><?php echo $_smarty_tpl->tpl_vars['P']->value['cate_nome'];?>
+</font></font></a>
+						<h3 class="title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><?php echo $_smarty_tpl->tpl_vars['P']->value['pro_nome'];?>
+</font></font></h3>
+						<a href="#" class="btn-link  mr-3 text-muted"> <i class=""></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ref: <?php echo $_smarty_tpl->tpl_vars['P']->value['pro_ref'];?>
+</font></font></a>
 						<div>
 							<ul class="rating-stars">
 								<li style="width:60%" class="stars-active">
@@ -36,7 +75,8 @@
 						<hr>
 			
 						<div class="mb-3">
-							<h6><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{$P.pro_desc_longa}</font></font></h6>
+							<h6><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><?php echo $_smarty_tpl->tpl_vars['P']->value['pro_desc_longa'];?>
+</font></font></h6>
 
 						</div>
 						
@@ -63,7 +103,8 @@
 						</div>
 
 						<div class="mb-3">
-							<var class="price h4"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">R$ {$P.pro_valor} </font></font></var> <br>
+							<var class="price h4"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">R$ <?php echo $_smarty_tpl->tpl_vars['P']->value['pro_valor'];?>
+ </font></font></var> <br>
 							<!--<span class="monthly"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">$ 32,00 / </font><a href="#" class="btn-link"><font style="vertical-align: inherit;">prestação</font></a><font style="vertical-align: inherit;"> mensal</font></font><a href="#" class="btn-link"><font style="vertical-align: inherit;"></font></a></span>-->
 						</div> <!-- price-detail-wrap .// -->
 
@@ -77,4 +118,8 @@
 			</div> <!-- row.// -->
 	</div> <!-- card-body.// -->
 </article>
-{/foreach}
+<?php
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);
+}
+}

@@ -6,12 +6,16 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Categoria' => $baseDir . '/model/Categoria.class.php',
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
     'Conexao' => $baseDir . '/model/Conexao.class.php',
     'Config' => $baseDir . '/model/Config.class.php',
     'CustoMaterial' => $baseDir . '/model/CustoMaterial.class.php',
+    'Paginacao' => $baseDir . '/model/Paginacao.class.php',
     'Produto' => $baseDir . '/model/produto.class.php',
+    'ProdutoImagen' => $baseDir . '/model/ProdutoImagen.class.php',
     'Rotas' => $baseDir . '/model/Rotas.class.php',
+    'Sistema' => $baseDir . '/model/Sistema.class.php',
     'Smarty' => $vendorDir . '/smarty/smarty/libs/Smarty.class.php',
     'SmartyBC' => $vendorDir . '/smarty/smarty/libs/SmartyBC.class.php',
     'SmartyCompilerException' => $vendorDir . '/smarty/smarty/libs/sysplugins/smartycompilerexception.php',

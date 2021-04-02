@@ -46,6 +46,11 @@
 		return self::get_SiteHOME() .'/' .self::get_ImagePasta();
 	}
 
+    static function ImageLink($img, $largura, $altura){
+		$imagem = self::get_ImageURL() ."thumb.php?src={$img}&w={$largura}&h={$altura}&zc=1";
+		return $imagem;
+	}
+
     //Rotas Administrativas
     static function get_SiteADM(){
         return self::get_SiteHOME() .'/' .self::$pasta_ADM;
@@ -54,11 +59,6 @@
     static function pag_PAG_ADM_CUSTOMATERIAL(){
         return self::get_SiteADM() .'/adm_customaterial';
     }
-
-    static function ImageLink($img, $largura, $altura){
-		$imagem = self::get_ImageURL() ."thumb.php?src={$img}&w={$largura}&h={$altura}&zc=1";
-		return $imagem;
-	}
 
     static function pag_Home(){
         return self::get_SiteHOME() . '/home';

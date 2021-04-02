@@ -4,6 +4,8 @@ class Conexao extends Config{
 
     protected $obj, $itens=array(), $prefix;
 
+    public $paginacao_links, $totalpags, $limite, $inicio;
+
     function __construct()
     {
         $this->host = self::DB_HOST;
@@ -34,6 +36,13 @@ class Conexao extends Config{
 
     function ExecuteSQL($query, array $params = NULL){
 		$this->obj = $this->Conectar()->prepare($query);
+
+        if(count($params) > 0){
+            foreach($params as $key =>$value){
+                $this->obj->bindValue($key, $value);
+            }
+        }
+
         return $this->obj->execute();
     }
 
@@ -47,6 +56,41 @@ class Conexao extends Config{
 
     function GetItens(){
         return $this->itens;
+    }
+
+    function PaginacaoLinks($campo, $tabela){
+        $pag =  new Paginacao();
+        $pag->GetPaginacao($campo, $tabela);
+        $this->paginacao_links = $pag->link;
+
+        $this->totalpags = $pag->totalpags;
+        $this->limite = $pag->limite;
+        $this->inicio = $pag->inicio;
+
+        $inicio = $pag->inicio;
+        $limite = $pag->limite;
+
+        if($this->totalpags > 0){
+			return " limit {$inicio}, {$limite}";
+		}else{
+			return " ";
+		}
+    }
+
+    protected function Paginacao($pagina=array()){
+        $pag = '<ul class="pagination">';
+        $pag .= '<li><a href="?p=1"> << </a></li>';
+
+        foreach($pagina as $p):
+            $pag .= '<li><a href="?p='.$p.'">'.$p.'</a></li>';
+        endforeach;
+
+        $pag .= '</ul>';
+        return $pag;    
+    }
+
+    function ShowPaginacao(){
+        return $this->Paginacao($this->paginacao_links);
     }
 }
 ?>

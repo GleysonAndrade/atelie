@@ -21,12 +21,16 @@ class ComposerStaticInitfac5f562bbb613da9e2077a787026c7e
     );
 
     public static $classMap = array (
+        'Categoria' => __DIR__ . '/../..' . '/model/Categoria.class.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'Conexao' => __DIR__ . '/../..' . '/model/Conexao.class.php',
         'Config' => __DIR__ . '/../..' . '/model/Config.class.php',
         'CustoMaterial' => __DIR__ . '/../..' . '/model/CustoMaterial.class.php',
+        'Paginacao' => __DIR__ . '/../..' . '/model/Paginacao.class.php',
         'Produto' => __DIR__ . '/../..' . '/model/produto.class.php',
+        'ProdutoImagen' => __DIR__ . '/../..' . '/model/ProdutoImagen.class.php',
         'Rotas' => __DIR__ . '/../..' . '/model/Rotas.class.php',
+        'Sistema' => __DIR__ . '/../..' . '/model/Sistema.class.php',
         'Smarty' => __DIR__ . '/..' . '/smarty/smarty/libs/Smarty.class.php',
         'SmartyBC' => __DIR__ . '/..' . '/smarty/smarty/libs/SmartyBC.class.php',
         'SmartyCompilerException' => __DIR__ . '/..' . '/smarty/smarty/libs/sysplugins/smartycompilerexception.php',
