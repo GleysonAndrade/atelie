@@ -1,4 +1,27 @@
-<!DOCTYPE HTML>
+<?php
+/* Smarty version 3.1.39, created on 2021-04-03 15:18:30
+  from 'C:\MAMP\htdocs\atelie\view\pedido_finalizar.tpl' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.39',
+  'unifunc' => 'content_60688746a0ddd8_49451212',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '928b4566d1c51a5e9fe711e597d953e2cd7fbbba' => 
+    array (
+      0 => 'C:\\MAMP\\htdocs\\atelie\\view\\pedido_finalizar.tpl',
+      1 => 1617463105,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_60688746a0ddd8_49451212 (Smarty_Internal_Template $_smarty_tpl) {
+?><!DOCTYPE HTML>
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -11,23 +34,30 @@
 <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
 
 <!-- jQuery -->
-<script src="js/jquery-2.0.0.min.js" type="text/javascript"></script>
+<?php echo '<script'; ?>
+ src="js/jquery-2.0.0.min.js" type="text/javascript"><?php echo '</script'; ?>
+>
 
 <!-- Bootstrap4 files-->
-<script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
+<?php echo '<script'; ?>
+ src="js/bootstrap.bundle.min.js" type="text/javascript"><?php echo '</script'; ?>
+>
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
 
 <!-- Font awesome 5 -->
 <link href="fonts/fontawesome/css/all.min.css" type="text/css" rel="stylesheet">
-
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 <!-- custom style -->
 <link href="css/ui.css" rel="stylesheet" type="text/css"/>
 <link href="css/responsive.css" rel="stylesheet" media="only screen and (max-width: 1200px)" />
 
 <!-- custom javascript -->
-<script src="js/script.js" type="text/javascript"></script>
+<?php echo '<script'; ?>
+ src="js/script.js" type="text/javascript"><?php echo '</script'; ?>
+>
 
-<script type="text/javascript">
+<?php echo '<script'; ?>
+ type="text/javascript">
 /// some script
 
 // jquery ready start
@@ -36,7 +66,8 @@ $(document).ready(function() {
 
 }); 
 // jquery end
-</script>
+<?php echo '</script'; ?>
+>
 
 </head>
 <body>
@@ -44,7 +75,7 @@ $(document).ready(function() {
 <!-- ========================= SECTION PAGETOP ========================= -->
 <section class="section-pagetop bg">
 <div class="container">
-	<h2 class="title-page">Carrinho de Compras</h2>
+	<h2 class="title-page">Finalizar Pedido </h2>
 </div> <!-- container //  -->
 </section>
 <!-- ========================= SECTION INTRO END// ========================= -->
@@ -58,7 +89,12 @@ $(document).ready(function() {
 <div class="card">
 
 <table class="table table-borderless table-shopping-cart">
-{foreach from=$PRO item=P}  
+<?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['PRO']->value, 'P');
+$_smarty_tpl->tpl_vars['P']->do_else = true;
+if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['P']->value) {
+$_smarty_tpl->tpl_vars['P']->do_else = false;
+?>  
 <thead class="text-muted">
 <tr class="small text-uppercase">
   <th scope="col">Produto</th>
@@ -71,35 +107,35 @@ $(document).ready(function() {
 <tr>
 	<td>
 		<figure class="itemside">
-			<div class="aside"><img src="{$P.pro_img}" class="img-sm"></div>
+			<div class="aside"><img src="<?php echo $_smarty_tpl->tpl_vars['P']->value['pro_img'];?>
+" class="img-sm"></div>
 			<figcaption class="info">
-				<a href="#" class="title text-dark">{$P.pro_nome}</a>
+				<a href="#" class="title text-dark"><?php echo $_smarty_tpl->tpl_vars['P']->value['pro_nome'];?>
+</a>
 				<p class="text-muted small">Size: XL, Color: blue, <br> Brand: Gucci</p>
 			</figcaption>
 		</figure>
 	</td>
-	<td class="text-center"> {$P.pro_qtd}</td>
+	<td class="text-center"> <?php echo $_smarty_tpl->tpl_vars['P']->value['pro_qtd'];?>
+</td>
 	<td> 
 		<div class="price-wrap"> 
-			<var class="price">R$ {$P.pro_valor}</var> 
-			<small class="text-muted"> {$P.pro_peso}g</small> 
+			<var class="price">R$ <?php echo $_smarty_tpl->tpl_vars['P']->value['pro_valor'];?>
+</var> 
+			<small class="text-muted"> <?php echo $_smarty_tpl->tpl_vars['P']->value['pro_peso'];?>
+g</small> 
 		</div> <!-- price-wrap .// -->
 	</td>
-	<td> 
-		<form name="carrinho_dell" method="post" action="{$PAG_CARRINHO_ALTERAR}">
-		<input type="hidden" name="pro_id" value="{$P.pro_id}">
-		<input type="hidden" name="acao" value="del">
-		<button class="btn btn-outline-danger">Remover</button>
-		</form>
-	</td>
 </tr>
-{/foreach}
+<?php
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 </tbody>
 </table>
 
-<div class="card-body border-top">
-	<a href="{$PAG_CONFIRMAR}" class="btn btn-outline-primary float-md-right"> Confirmar pedido <i class="fa fa-chevron-right"></i> </a>
-	<a href="{$PAG_PRODUTO}" class="btn btn-light"> <i class="fa fa-chevron-left"></i> Continuar comprando </a>
+<div class="card-body border-top"><!--Gerar Frete-->
+	<a href="<?php echo $_smarty_tpl->tpl_vars['PAG_FINALIZAR']->value;?>
+" class="btn btn-outline-success btn-block float-md-right"> Efetuar Pagamento <i class="fas fa-credit-card"></i> </a>
 </div>	
 </div> <!-- card.// -->
 
@@ -113,13 +149,7 @@ $(document).ready(function() {
 			<div class="card-body">
 			<form>
 				<div class="form-group">
-					<label>Tem Cupom?</label>
-					<div class="input-group">
-						<input type="text" class="form-control" name="" placeholder="Coupon code">
-						<span class="input-group-append"> 
-							<button class="btn btn-primary">Inserir</button>
-						</span>
-					</div>
+				
 				</div>
 			</form>
 			</div> <!-- card-body.// -->
@@ -128,7 +158,8 @@ $(document).ready(function() {
 			<div class="card-body">
 					<dl class="dlist-align">
 					  <dt>Total: </dt>
-					  <dd class="text-right">R$ {$P.pro_subTotal}</dd>
+					  <dd class="text-right">R$ <?php echo $_smarty_tpl->tpl_vars['P']->value['pro_subTotal'];?>
+</dd>
 					</dl>
 					<dl class="dlist-align">
 					  <dt>Desconto:</dt>
@@ -136,7 +167,8 @@ $(document).ready(function() {
 					</dl>
 					<dl class="dlist-align">
 					  <dt>Total Compra:</dt>
-					  <dd class="text-right  h5"><strong>R$ {$TOTAL}</strong></dd>
+					  <dd class="text-right  h5"><strong>R$ <?php echo $_smarty_tpl->tpl_vars['TOTAL']->value;?>
+</strong></dd>
 					</dl>
 					<hr>
 					<p class="text-center mb-3">
@@ -150,4 +182,5 @@ $(document).ready(function() {
 </div> <!-- container .//  -->
 </section>
 </body>
-</html>
+</html><?php }
+}

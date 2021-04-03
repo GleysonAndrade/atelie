@@ -9,7 +9,6 @@ if(!isset($_POST['pro_id']) or $_POST['pro_id'] < 1){
 $id = (int)$_POST['pro_id'];
 
 $carrinho = new Carrinho();
-$carrinho->CarrinhoAdd($id);
 
 try {
     $carrinho->CarrinhoAdd($id);

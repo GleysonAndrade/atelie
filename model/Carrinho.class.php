@@ -55,7 +55,7 @@ class Carrinho{
         switch ($ACAO) {
             case 'add':
                 if(!isset($_SESSION['PRO'][$ID]['ID'])){
-                    $_SESSION['PRO'][$ID]['ID'] ;
+                    $_SESSION['PRO'][$ID]['ID'] = $ID;
                     $_SESSION['PRO'][$ID]['NOME'] = $NOME;
                     $_SESSION['PRO'][$ID]['VALOR'] = $VALOR;
                     $_SESSION['PRO'][$ID]['VALOR_US'] = $VALOR_US;
@@ -70,13 +70,24 @@ class Carrinho{
                 break;
             
             case 'del':
-                # code...
+                $this->CarrinhoDel($id);
+                echo '<h4 class="alert alert-success">Produto removido com sucesso! </h4>';
                 break;
 
             case 'limpar':
-                # code...
+                $this->CarrinhoLimpar();
+                echo '<h4 class="alert alert-success">Carrinho limpo com sucesso! </h4>';
                 break;
         }
     }
+    private function CarrinhoDel($id){
+        unset($_SESSION['PRO'][$id]);
+    }
+
+    private function CarrinhoLimpar(){
+        unset($_SESSION['PRO']);
+    }
+
+
 }
 ?>

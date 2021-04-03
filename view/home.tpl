@@ -71,18 +71,43 @@
 </header><!-- sect-heading -->
 
 <div class="row">
-
 <div class="col-md-3">
 		<div href="#" class="card card-product-grid">
-			<a href="#" class="img-wrap"> <img src="view/images/1.gif"> </a>
+			<a href="#" class="img-wrap"> <img src="./media/images/10.jpg"> </a>
 			<figcaption class="info-wrap">
-				<a href="#" class="title">Just another product name</a>
-				<div class="price mt-1">$179.00</div> <!-- price-wrap.// -->
+				<a href="#" class="title">Teste</a>
+				<div class="price mt-1"></div> <!-- price-wrap.// -->
+			</figcaption>
+		</div>
+</div> <!-- row.// -->
+<div class="col-md-3">
+		<div href="#" class="card card-product-grid">
+			<a href="#" class="img-wrap"> <img src="./media/images/9.jpg"> </a>
+			<figcaption class="info-wrap">
+				<a href="#" class="title">Teste</a>
+				<div class="price mt-1"></div> <!-- price-wrap.// -->
+			</figcaption>
+		</div>
+</div> <!-- row.// -->
+<div class="col-md-3">
+		<div href="#" class="card card-product-grid">
+			<a href="#" class="img-wrap"> <img src="./media/images/8.jpg"> </a>
+			<figcaption class="info-wrap">
+				<a href="#" class="title">Teste</a>
+				<div class="price mt-1"></div> <!-- price-wrap.// -->
+			</figcaption>
+		</div>
+</div> <!-- row.// -->
+<div class="col-md-3">
+		<div href="#" class="card card-product-grid">
+			<a href="#" class="img-wrap"> <img src="./media/images/7.jpg"> </a>
+			<figcaption class="info-wrap">
+				<a href="#" class="title">Teste</a>
+				<div class="price mt-1"></div> <!-- price-wrap.// -->
 			</figcaption>
 		</div>
 </div> <!-- row.// -->
 
 </div><!-- container // -->
 </section>
-
 <!-- ========================= SECTION  END// ========================= -->

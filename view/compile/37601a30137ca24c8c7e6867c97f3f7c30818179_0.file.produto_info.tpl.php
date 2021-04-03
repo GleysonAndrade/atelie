@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-04-03 03:56:06
+/* Smarty version 3.1.39, created on 2021-04-03 17:31:51
   from 'C:\MAMP\htdocs\atelie\view\produto_info.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_6067e75650bf93_02633783',
+  'unifunc' => 'content_6068a68719eae7_86331908',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '37601a30137ca24c8c7e6867c97f3f7c30818179' => 
     array (
       0 => 'C:\\MAMP\\htdocs\\atelie\\view\\produto_info.tpl',
-      1 => 1617422163,
+      1 => 1617471101,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6067e75650bf93_02633783 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6068a68719eae7_86331908 (Smarty_Internal_Template $_smarty_tpl) {
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['PRO']->value, 'P');
 $_smarty_tpl->tpl_vars['P']->do_else = true;
 if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['P']->value) {

@@ -108,25 +108,25 @@ $(document).ready(function() {
           </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{$PAG_PRODUTO}">Produtos</a>
+          <a class="nav-link" href="{$PAG_PRODUTO}"><i class="fa fa-tags"></i> Produtos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Supermarket</a>
+          <a class="nav-link" href="#"></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Electronics</a>
+          <a class="nav-link" href="#"></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Baby &amp Toys</a>
+          <a class="nav-link" href="#"></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Fitness sport</a>
+          <a class="nav-link" href="#"></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Clothing</a>
+          <a class="nav-link" href="#"></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Furnitures</a>
+          <a class="nav-link" href="#"></a>
         </li>
       </ul>
     </div> <!-- collapse .// -->
@@ -148,9 +148,9 @@ Rotas::get_Pagina();
 					<h6 class="title">Paginas</h6>
 					<ul class="list-unstyled">
 						<li> <a href="{$PAG_PRODUTO}">Produtos</a></li>
-						<li> <a href="#">Puma</a></li>
-						<li> <a href="#">Reebok</a></li>
-						<li> <a href="#">Nike</a></li>
+						<li> <a href="#"></a></li>
+						<li> <a href="#"></a></li>
+						<li> <a href="#"></a></li>
 					</ul>
 				</aside>
 				<aside class="col-md col-6">
@@ -198,7 +198,7 @@ Rotas::get_Pagina();
 			</div>
 			<div class="col-md-7 text-md-center">
 				<span  class="px-2">atelielauralaco@systecweb.online</span>
-				<span  class="px-2">+55 (31)332-9375</span>
+				<span  class="px-1">+55 (31) 98348329</span>
 				<span  class="px-2">Rua Maceió 431, Vista Alegre Ibirite</span>
 			</div>
 			<div class="col-md-2 text-md-right text-muted">

@@ -42,6 +42,14 @@
         return self::get_SiteHOME() . '/minhaconta';
     }
 
+    static function pag_PedidoConfirmar(){
+        return self::get_SiteHOME() . '/pedido_confirmar';
+    }
+
+    static function pag_PedidoFinalizar(){
+        return self::get_SiteHOME() . '/pedido_finalizar';
+    }
+
     static function get_ImagePasta(){
         return 'media/images/';
     }

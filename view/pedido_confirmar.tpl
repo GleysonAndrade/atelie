@@ -44,7 +44,7 @@ $(document).ready(function() {
 <!-- ========================= SECTION PAGETOP ========================= -->
 <section class="section-pagetop bg">
 <div class="container">
-	<h2 class="title-page">Carrinho de Compras</h2>
+	<h2 class="title-page">Confirmar Pedido </h2>
 </div> <!-- container //  -->
 </section>
 <!-- ========================= SECTION INTRO END// ========================= -->
@@ -89,7 +89,7 @@ $(document).ready(function() {
 		<form name="carrinho_dell" method="post" action="{$PAG_CARRINHO_ALTERAR}">
 		<input type="hidden" name="pro_id" value="{$P.pro_id}">
 		<input type="hidden" name="acao" value="del">
-		<button class="btn btn-outline-danger">Remover</button>
+		<button class="btn btn-outline-danger">Cancelar</button>
 		</form>
 	</td>
 </tr>
@@ -98,8 +98,8 @@ $(document).ready(function() {
 </table>
 
 <div class="card-body border-top">
-	<a href="{$PAG_CONFIRMAR}" class="btn btn-outline-primary float-md-right"> Confirmar pedido <i class="fa fa-chevron-right"></i> </a>
-	<a href="{$PAG_PRODUTO}" class="btn btn-light"> <i class="fa fa-chevron-left"></i> Continuar comprando </a>
+	<a href="{$PAG_FINALIZAR}" class="btn btn-outline-success float-md-right"> Finalizar Pedido > <i class="fa fa-chevron-right"></i> </a>
+	<a href="{$PAG_PRODUTO}" class="btn btn-outline-info"> <i class="fa fa-chevron-left"></i> Voltar Carrinho </a>
 </div>	
 </div> <!-- card.// -->
 
@@ -113,13 +113,7 @@ $(document).ready(function() {
 			<div class="card-body">
 			<form>
 				<div class="form-group">
-					<label>Tem Cupom?</label>
-					<div class="input-group">
-						<input type="text" class="form-control" name="" placeholder="Coupon code">
-						<span class="input-group-append"> 
-							<button class="btn btn-primary">Inserir</button>
-						</span>
-					</div>
+				
 				</div>
 			</form>
 			</div> <!-- card-body.// -->

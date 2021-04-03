@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-04-03 04:00:48
+/* Smarty version 3.1.39, created on 2021-04-03 15:16:57
   from 'C:\MAMP\htdocs\atelie\view\carrinho.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_6067e87054e437_62041509',
+  'unifunc' => 'content_606886e9186c46_38303102',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'a3004a75923eef85d3029f61ac7ee61f9e2d1d15' => 
     array (
       0 => 'C:\\MAMP\\htdocs\\atelie\\view\\carrinho.tpl',
-      1 => 1617422399,
+      1 => 1617461525,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6067e87054e437_62041509 (Smarty_Internal_Template $_smarty_tpl) {
+function content_606886e9186c46_38303102 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE HTML>
 <html lang="en">
 <head>
@@ -126,9 +126,14 @@ $_smarty_tpl->tpl_vars['P']->do_else = false;
 g</small> 
 		</div> <!-- price-wrap .// -->
 	</td>
-	<td class="text-right"> 
-	<a data-original-title="Save to Wishlist" title="" href="" class="btn btn-light" data-toggle="tooltip"> <i class="fa fa-heart"></i></a> 
-	<a href="" class="btn btn-light"> Remover</a>
+	<td> 
+		<form name="carrinho_dell" method="post" action="<?php echo $_smarty_tpl->tpl_vars['PAG_CARRINHO_ALTERAR']->value;?>
+">
+		<input type="hidden" name="pro_id" value="<?php echo $_smarty_tpl->tpl_vars['P']->value['pro_id'];?>
+">
+		<input type="hidden" name="acao" value="del">
+		<button class="btn btn-outline-danger">Remover</button>
+		</form>
 	</td>
 </tr>
 <?php
@@ -138,8 +143,10 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 </table>
 
 <div class="card-body border-top">
-	<a href="#" class="btn btn-primary float-md-right"> Finalizar compra <i class="fa fa-chevron-right"></i> </a>
-	<a href="#" class="btn btn-light"> <i class="fa fa-chevron-left"></i> Continuar comprando </a>
+	<a href="<?php echo $_smarty_tpl->tpl_vars['PAG_CONFIRMAR']->value;?>
+" class="btn btn-outline-primary float-md-right"> Confirmar pedido <i class="fa fa-chevron-right"></i> </a>
+	<a href="<?php echo $_smarty_tpl->tpl_vars['PAG_PRODUTO']->value;?>
+" class="btn btn-light"> <i class="fa fa-chevron-left"></i> Continuar comprando </a>
 </div>	
 </div> <!-- card.// -->
 

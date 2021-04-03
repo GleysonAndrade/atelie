@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-04-01 21:29:27
+/* Smarty version 3.1.39, created on 2021-04-03 17:19:05
   from 'C:\MAMP\htdocs\atelie\view\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_60663b378adf97_02082793',
+  'unifunc' => 'content_6068a3896453e6_80395164',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '28abc8002e7eb4f47f3f5473d75e49bdbc7e524e' => 
     array (
       0 => 'C:\\MAMP\\htdocs\\atelie\\view\\index.tpl',
-      1 => 1617312564,
+      1 => 1617470341,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_60663b378adf97_02082793 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6068a3896453e6_80395164 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html lang="pt-br">
@@ -161,25 +161,25 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="<?php echo $_smarty_tpl->tpl_vars['PAG_PRODUTO']->value;?>
-">Produtos</a>
+"><i class="fa fa-tags"></i> Produtos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Supermarket</a>
+          <a class="nav-link" href="#"></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Electronics</a>
+          <a class="nav-link" href="#"></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Baby &amp Toys</a>
+          <a class="nav-link" href="#"></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Fitness sport</a>
+          <a class="nav-link" href="#"></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Clothing</a>
+          <a class="nav-link" href="#"></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Furnitures</a>
+          <a class="nav-link" href="#"></a>
         </li>
       </ul>
     </div> <!-- collapse .// -->
@@ -202,9 +202,9 @@ Rotas::get_Pagina();
 					<ul class="list-unstyled">
 						<li> <a href="<?php echo $_smarty_tpl->tpl_vars['PAG_PRODUTO']->value;?>
 ">Produtos</a></li>
-						<li> <a href="#">Puma</a></li>
-						<li> <a href="#">Reebok</a></li>
-						<li> <a href="#">Nike</a></li>
+						<li> <a href="#"></a></li>
+						<li> <a href="#"></a></li>
+						<li> <a href="#"></a></li>
 					</ul>
 				</aside>
 				<aside class="col-md col-6">
@@ -256,7 +256,7 @@ Rotas::get_Pagina();
 			</div>
 			<div class="col-md-7 text-md-center">
 				<span  class="px-2">atelielauralaco@systecweb.online</span>
-				<span  class="px-2">+55 (31)332-9375</span>
+				<span  class="px-1">+55 (31) 98348329</span>
 				<span  class="px-2">Rua Maceió 431, Vista Alegre Ibirite</span>
 			</div>
 			<div class="col-md-2 text-md-right text-muted">

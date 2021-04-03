@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-04-02 00:02:06
+/* Smarty version 3.1.39, created on 2021-04-03 16:04:19
   from 'C:\MAMP\htdocs\atelie\view\home.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_60665efe3af244_46152643',
+  'unifunc' => 'content_6068920315d720_20285743',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'ba4ddf7448b415d6707acfa6d6a92ac4ed631e3a' => 
     array (
       0 => 'C:\\MAMP\\htdocs\\atelie\\view\\home.tpl',
-      1 => 1617321720,
+      1 => 1617465856,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_60665efe3af244_46152643 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6068920315d720_20285743 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!-- ========================= SECTION INTRO ========================= -->
 <section class="section-intro">
 
@@ -95,19 +95,44 @@ function content_60665efe3af244_46152643 (Smarty_Internal_Template $_smarty_tpl)
 </header><!-- sect-heading -->
 
 <div class="row">
-
 <div class="col-md-3">
 		<div href="#" class="card card-product-grid">
-			<a href="#" class="img-wrap"> <img src="view/images/1.gif"> </a>
+			<a href="#" class="img-wrap"> <img src="./media/images/10.jpg"> </a>
 			<figcaption class="info-wrap">
-				<a href="#" class="title">Just another product name</a>
-				<div class="price mt-1">$179.00</div> <!-- price-wrap.// -->
+				<a href="#" class="title">Teste</a>
+				<div class="price mt-1"></div> <!-- price-wrap.// -->
+			</figcaption>
+		</div>
+</div> <!-- row.// -->
+<div class="col-md-3">
+		<div href="#" class="card card-product-grid">
+			<a href="#" class="img-wrap"> <img src="./media/images/9.jpg"> </a>
+			<figcaption class="info-wrap">
+				<a href="#" class="title">Teste</a>
+				<div class="price mt-1"></div> <!-- price-wrap.// -->
+			</figcaption>
+		</div>
+</div> <!-- row.// -->
+<div class="col-md-3">
+		<div href="#" class="card card-product-grid">
+			<a href="#" class="img-wrap"> <img src="./media/images/8.jpg"> </a>
+			<figcaption class="info-wrap">
+				<a href="#" class="title">Teste</a>
+				<div class="price mt-1"></div> <!-- price-wrap.// -->
+			</figcaption>
+		</div>
+</div> <!-- row.// -->
+<div class="col-md-3">
+		<div href="#" class="card card-product-grid">
+			<a href="#" class="img-wrap"> <img src="./media/images/7.jpg"> </a>
+			<figcaption class="info-wrap">
+				<a href="#" class="title">Teste</a>
+				<div class="price mt-1"></div> <!-- price-wrap.// -->
 			</figcaption>
 		</div>
 </div> <!-- row.// -->
 
 </div><!-- container // -->
 </section>
-
 <!-- ========================= SECTION  END// ========================= --><?php }
 }

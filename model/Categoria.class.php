@@ -10,7 +10,7 @@ class Categoria extends Conexao{
     }
 
     function GetCategoria(){
-        //Buscar produtos de uma categoria especifica
+        //Buscar categoria
         $query = "SELECT * FROM {$this->prefix}categoria";
 
         $this->ExecuteSQL($query);
@@ -26,7 +26,7 @@ class Categoria extends Conexao{
             'cate_nome' => $lista['cate_nome'],
             'cate_descricao' => $lista['cate_descricao'],
             'cate_slug' => $lista['cate_slug'],
-            'cate_link' => Rotas::pag_Produto(). '/' . $lista['cate_id'] . '/' . $lista['cate_slug'], 
+            'cate_link'  => Rotas::pag_Produto(). '/' .$lista['cate_id'] . '/' . $lista['cate_slug'], 
         );
 
         $i++;
