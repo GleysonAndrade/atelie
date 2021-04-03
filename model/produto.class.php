@@ -57,6 +57,7 @@ class Produto extends Conexao{
             'pro_desc_longa' => $lista['pro_desc_longa'],
             'pro_peso' => $lista['pro_peso'],
             'pro_valor' => Sistema::MoedaBR($lista['pro_valor']),
+            'pro_valor_us' => $lista['pro_valor'],
             'pro_altura' => $lista['pro_altura'],
             'pro_largura' => $lista['pro_largura'],
             'pro_comprimento' => $lista['pro_comprimento'],

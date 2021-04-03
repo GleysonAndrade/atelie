@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-04-01 22:54:02
+/* Smarty version 3.1.39, created on 2021-04-03 03:56:06
   from 'C:\MAMP\htdocs\atelie\view\produto_info.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_60664f0a4238c1_58767974',
+  'unifunc' => 'content_6067e75650bf93_02633783',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '37601a30137ca24c8c7e6867c97f3f7c30818179' => 
     array (
       0 => 'C:\\MAMP\\htdocs\\atelie\\view\\produto_info.tpl',
-      1 => 1617317639,
+      1 => 1617422163,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_60664f0a4238c1_58767974 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6067e75650bf93_02633783 (Smarty_Internal_Template $_smarty_tpl) {
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['PRO']->value, 'P');
 $_smarty_tpl->tpl_vars['P']->do_else = true;
 if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['P']->value) {
@@ -109,8 +109,15 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 						</div> <!-- price-detail-wrap .// -->
 
 						<div class="mb-4">
-							<a href="#" class="btn btn-primary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Compre Agora</font></font></a>
-							<a href="#" class="btn btn-light"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Adicionar ao carrinho</font></font></a>
+						    <form name="carrinhho" method="post" action="<?php echo $_smarty_tpl->tpl_vars['PAG_COMPRAR']->value;?>
+">
+							  
+							  <input type="hidden" name="pro_id" value="<?php echo $_smarty_tpl->tpl_vars['P']->value['pro_id'];?>
+">
+							  <button class="btn btn-primary">Comprar</button>
+							  <input type="hidden" name="acao" value="add">
+							  <button class="btn btn-info">Adicionar Carrinho</button>
+						     </form>	
 						</div>
 						
 					</article> <!-- product-info-aside .// -->

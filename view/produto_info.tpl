@@ -68,8 +68,13 @@
 						</div> <!-- price-detail-wrap .// -->
 
 						<div class="mb-4">
-							<a href="#" class="btn btn-primary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Compre Agora</font></font></a>
-							<a href="#" class="btn btn-light"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Adicionar ao carrinho</font></font></a>
+						    <form name="carrinhho" method="post" action="{$PAG_COMPRAR}">
+							  
+							  <input type="hidden" name="pro_id" value="{$P.pro_id}">
+							  <button class="btn btn-primary">Comprar</button>
+							  <input type="hidden" name="acao" value="add">
+							  <button class="btn btn-info">Adicionar Carrinho</button>
+						     </form>	
 						</div>
 						
 					</article> <!-- product-info-aside .// -->

@@ -1,5 +1,9 @@
 <?php
 
+if(!isset($_SESSION)){
+    session_start();
+}
+
 require './lib/autoload.php';
 
 $smarty = new Template();

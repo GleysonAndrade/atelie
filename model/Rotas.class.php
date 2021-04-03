@@ -22,6 +22,10 @@
         return self::get_SiteHOME() . '/carrinho';
     }
 
+    static function pag_CarrinhoAlterar(){
+        return self::get_SiteHOME() . '/carrinho_alterar';
+    }
+
     static function pag_Produto(){
         return self::get_SiteHOME() . '/produto';
     }
@@ -62,6 +66,17 @@
 
     static function pag_Home(){
         return self::get_SiteHOME() . '/home';
+    }
+
+    static function get_Pasta_Controller(){
+        return self::$pasta_controller;
+    }
+
+    //Método de redirecionamento
+
+    static function Redirecionar($tempo, $pagina){
+        $url = '<meta http-equiv="refresh" content="'.$tempo.'; url='. $pagina .'">';
+		echo $url;
     }
 
      static function get_Pagina(){
