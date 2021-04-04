@@ -19,7 +19,6 @@ if($pedido->PedidoGravar($cliente, $cod, $ref)){
 }
 
 $smarty->display('pedido_finalizar.tpl');
-
 }else{
     echo '<h4 class="alert alert-danger">Adicine produtos no carrinho! </h4>';
     Rotas::Redirecionar(1, Rotas::pag_Produto());
