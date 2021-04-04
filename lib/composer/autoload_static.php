@@ -27,6 +27,7 @@ class ComposerStaticInitfac5f562bbb613da9e2077a787026c7e
         'Conexao' => __DIR__ . '/../..' . '/model/Conexao.class.php',
         'Config' => __DIR__ . '/../..' . '/model/Config.class.php',
         'CustoMaterial' => __DIR__ . '/../..' . '/model/CustoMaterial.class.php',
+        'Login' => __DIR__ . '/../..' . '/model/Login.class.php',
         'Paginacao' => __DIR__ . '/../..' . '/model/Paginacao.class.php',
         'Pedido' => __DIR__ . '/../..' . '/model/Pedido.class.php',
         'Produto' => __DIR__ . '/../..' . '/model/produto.class.php',
