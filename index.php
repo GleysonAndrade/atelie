@@ -4,6 +4,10 @@ if(!isset($_SESSION)){
     session_start();
 }
 
+if(!isset($_SESSION['pedido'])){
+    $_SESSION['pedido'] = md5(uniqid(date('YmdHms')));
+}
+
 require './lib/autoload.php';
 
 $smarty = new Template();
